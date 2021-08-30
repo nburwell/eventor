@@ -5,8 +5,7 @@ require "date"
 require "time"
 Bundler.require
  
-load 'parser.rb'
-load 'ayso.rb'
+require_relative 'lib/parser/ayso.rb'
 
 ### Create iCal ics file with multiple events
 class EventCreator
@@ -18,7 +17,7 @@ class EventCreator
   end
 
   def make_events
-    ayso_parser = Ayso.new("input.txt")
+    ayso_parser = Parser::Ayso.new(ARGV[0] || "", "input.txt")
     ayso_parser.events.each do |event|
       @cal.add_event(event)
     end

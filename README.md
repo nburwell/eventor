@@ -12,9 +12,9 @@ Note: tested with Ruby 2.4.2, using `rbenv`
 
 ## Usage
 
-* Insert data into `input.csv`
+* Insert data into `input.txt`
 * Ensure you have created a parser class for handling the data
-* Instatiate an instance of the class in `Eventor#make_events`
+* Instantiate an instance of the class in `Eventor#make_events`
 
 Run the file:
 ```
