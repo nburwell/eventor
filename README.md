@@ -8,7 +8,7 @@ Ruby script to generate ICS files, suitable for importing into Apple Calendar, p
 bundle install
 ```
 
-Note: tested with Ruby 2.4.2, using `rbenv`
+Note: tested with Ruby 2.6.6, using `rbenv`
 
 ## Usage
 
